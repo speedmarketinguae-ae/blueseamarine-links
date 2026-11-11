@@ -1,0 +1,7 @@
+DirectoryIndex index.html
+<FilesMatch "\.html$">
+  Header set Cache-Control "no-cache"
+</FilesMatch>
+<FilesMatch "\.(jpg|png|pdf)$">
+  Header set Cache-Control "public, max-age=604800"
+</FilesMatch>
